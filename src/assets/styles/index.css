@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100dvh;
+    overflow-y: hidden;
+}
+header{
+    text-align: center;
+}
+main{
+    border: solid #2a86a9 1px;
+    height: calc(100dvh - 40px);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-y: scroll;
+
+}
+.card-item{
+    width: 5vw;
+    height: 5vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+.active{
+    background: #2a86a9;
+    transform: rotate(360deg);
+}
+.active span{
+    display: none;
+}
+.inactive{
+    background: #fff;
+}
+.inactive span{
+    display: block;
+}
+.card-item span{
+    font-weight: bold;
+    font-size: 1vw;
+}
